@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.chuangwai.view.NoScrollViewPager
+        android:id="@+id/vp_content_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+    </com.chuangwai.view.NoScrollViewPager>
+    
+    <RadioGroup 
+        android:id="@+id/rg_content_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_tab_bg">
+      
+        <RadioButton 
+            style="@style/main_tab_style"
+            android:id="@+id/rb_content_fragment_home"
+            android:drawableTop="@drawable/tab_home_bg"
+            android:text="首页"
+            />
+            
+        <RadioButton 
+            style="@style/main_tab_style"
+            android:id="@+id/rb_content_fragment_newscenter"
+            android:drawableTop="@drawable/tab_newscenter_bg"
+            android:text="新闻中心"
+            />    
+             
+        <RadioButton 
+            style="@style/main_tab_style"
+            android:id="@+id/rb_content_fragment_smartservice"
+            android:drawableTop="@drawable/tab_smartservice_bg"
+            android:text="智慧服务"
+            />  
+               
+        <RadioButton 
+            style="@style/main_tab_style"
+            android:id="@+id/rb_content_fragment_govaffairs"
+            android:drawableTop="@drawable/tab_govaffairs_bg"
+            android:text="政务"
+            />  
+               
+        <RadioButton 
+            style="@style/main_tab_style"
+            android:id="@+id/rb_content_fragment_setting"
+            android:drawableTop="@drawable/tab_setting_bg"
+            android:text="设置"
+            />
+        
+    </RadioGroup>
+    
+    
+
+</LinearLayout>
+
